@@ -15,3 +15,4 @@ before_install:
  - export JAVA8_HOME=$(update-alternatives --list java | grep java-8-oracle | sed 's|/bin/java$||' | sed 's|/jre$||')
 
 install: ./gradlew assemble -Pskip.signing updateSHAs
+
